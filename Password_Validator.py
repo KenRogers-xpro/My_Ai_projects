@@ -2,4 +2,53 @@
 
 def valid_password():
     user_password = input("Enter your password:")
+
+    IsEightCharacters = True
+    IsDigit = True
+    IsUppercase = True
+    Count_Char = 0
+    Count_Upper = 0
+    Count_Digit = 0
+
+    for letter in user_password:
+        Count_Char = Count_Char+1
+        if letter.isupper():
+            Count_Upper = Count_Upper + 1
+        
+
+        if letter.isdigit():
+            Count_Digit = Count_Digit + 1
+            # print (Count_Char)
+            # print (letter)
     
+    if Count_Char >= 8:
+        IsEightCharacters
+
+    else:
+        print ("Password Should Have Eight characters atleast!!!")
+        IsEightCharacters = False
+
+    if Count_Upper > 0:
+        IsUppercase
+
+    else :
+        print ("Password Should Have an uppercase character atleast!!!")
+        IsUppercase = False
+        
+
+    if Count_Digit > 0:
+        IsDigit
+    else:
+        print ("Password Should Have one number atleast!!!")
+        IsDigit = False
+
+    if IsDigit and IsEightCharacters and IsUppercase :
+        print ("Your Password is strong")
+
+    # elif IsDigit and IsEightCharacters and IsUppercase=False :
+    #     print ("Your Password is strong")
+    else:
+        print (" Weak password!!!!!")
+
+
+valid_password()
