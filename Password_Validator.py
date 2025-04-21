@@ -1,6 +1,14 @@
 # this program is supposed to check password validity
+# it checks for the following conditions
+# 1. Password should be at least 8 characters long
+# 2. Password should have at least one uppercase letter
+# 3. Password should have at least one digit
+# Feel free to test your balls off with this code
 
 def valid_password():
+    print ("Welcome to the password validator")
+    print ("-------------------------------------")
+
     while True:
         user_password = input("Enter your password:")
 
@@ -57,7 +65,8 @@ def valid_password():
         # elif IsDigit and IsEightCharacters and IsUppercase=False :
         #     print ("Your Password is strong")
         else:
-            print (" Weak password!!!!!")
+            print (" --------Weak password!!!!!-----------")
+            print (" -------------------------------------")
             print (" Try again with a better password!!!!!")
 
 
