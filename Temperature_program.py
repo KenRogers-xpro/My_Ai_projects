@@ -17,26 +17,26 @@ def main():
 
     
     while True:
-        print ("1. Fahrenheit")
-        print ("2. Celsius")
+        print ("1. Fahrenheit(\u00B0F)")
+        print ("2. Celsius(\u00B0C)")
         print ("3. Exit")
         option = int (input("What do you want to convert:"))
 
         
         if option == 1:
             while True:
-                print ("You are converting from Celsius to Fahrenheit:")
+                print ("You are converting from Celsius(\u00B0C) to Fahrenheit(\u00B0F):")
                 Ans = celsius()
                 if Ans > 90:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}F")
+                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
                     print ("--------Its so hot ----------")
 
                 elif Ans <50:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}F")
+                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
                     print ("----Its so Cold ----my balls are freezing------") 
 
                 else :
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}F")
+                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
                     print ("--------This temperature is moderate ----------")
 
                 Continue = input ("Do you want to continue (y/n):")
@@ -56,15 +56,15 @@ def main():
                 Ans = fahrenheit()
     
                 if Ans > 40:
-                        print (f"The temperature in Fahrenheit is {Ans:.3f}C")
+                        print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
                         print ("--------Its so hot ----------")
     
                 elif Ans <20:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}C")
+                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
                     print ("----Its so Cold ----my balls are freezing------") 
     
                 else :
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}C")
+                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
                     print ("--------This temperature is moderate ----------")
     
                 Continue = input ("Do you want to continue (y/n):")
