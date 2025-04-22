@@ -1,104 +1,91 @@
-
 # This program converts temperatures to either celicius or fahrenheit
+
 
 def celsius():
     Cel = float(input("Enter the Celsius value: "))
     temp_Fah = (Cel * 1.8) + 32
     return temp_Fah
 
+
 def fahrenheit():
     Fah = float(input("Enter the Fahrenheit value: "))
-    cel_temp = (Fah - 32)/1.8
+    cel_temp = (Fah - 32) / 1.8
     return cel_temp
 
+
 def main():
-    print ("Welcome to The best Temperature converting program ")
-    print ("---------------The temperature in balls------------")
+    print("Welcome to The best Temperature converting program ")
+    print("---------------The temperature in balls------------")
 
-    
     while True:
-        print ("1. Fahrenheit(\u00B0F)")
-        print ("2. Celsius(\u00B0C)")
-        print ("3. Exit")
-        option = int (input("What do you want to convert:"))
+        print("1. Fahrenheit(\u00b0F)")
+        print("2. Celsius(\u00b0C)")
+        print("3. Exit")
+        option = int(input("What do you want to convert:"))
 
-        
         if option == 1:
             while True:
-                print ("You are converting from Celsius(\u00B0C) to Fahrenheit(\u00B0F):")
+                print(
+                    "You are converting from Celsius(\u00b0C) to Fahrenheit(\u00b0F):"
+                )
                 Ans = celsius()
                 if Ans > 90:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
-                    print ("--------Its so hot ----------")
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0F")
+                    print("--------Its so hot ----------")
 
-                elif Ans <50:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
-                    print ("----Its so Cold ----my balls are freezing------") 
+                elif Ans < 50:
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0F")
+                    print("----Its so Cold ----my balls are freezing------")
 
-                else :
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0F")
-                    print ("--------This temperature is moderate ----------")
+                else:
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0F")
+                    print("--------This temperature is moderate ----------")
 
-                Continue = input ("Do you want to continue (y/n):")
+                Continue = input("Do you want to continue (y/n):")
                 if Continue == "y":
-                    print ("Welcome again----")
+                    print("Welcome again----")
 
                 elif Continue == "n":
-                    print ("Am so glad i served you Hope to see you back bye !!------")
+                    print("Am so glad i served you Hope to see you back bye !!------")
                     break
 
-                else :
-                    print ("invalid input !!!!!!!!! you MotherFucker!!!!!!!")
+                else:
+                    print("invalid input !!!!!!!!! you MotherFucker!!!!!!!")
 
         elif option == 2:
             while True:
-                print ("You are converting from Fahrenheit to Celcius:")
+                print("You are converting from Fahrenheit to Celcius:")
                 Ans = fahrenheit()
-    
+
                 if Ans > 40:
-                        print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
-                        print ("--------Its so hot ----------")
-    
-                elif Ans <20:
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
-                    print ("----Its so Cold ----my balls are freezing------") 
-    
-                else :
-                    print (f"The temperature in Fahrenheit is {Ans:.3f}\u00B0C")
-                    print ("--------This temperature is moderate ----------")
-    
-                Continue = input ("Do you want to continue (y/n):")
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0C")
+                    print("--------Its so hot ----------")
+
+                elif Ans < 20:
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0C")
+                    print("----Its so Cold ----my balls are freezing------")
+
+                else:
+                    print(f"The temperature in Fahrenheit is {Ans:.3f}\u00b0C")
+                    print("--------This temperature is moderate ----------")
+
+                Continue = input("Do you want to continue (y/n):")
                 if Continue == "y":
-                    print ("Welcome again----")
-    
+                    print("Welcome again----")
+
                 elif Continue == "n":
-                    print ("Am so glad i served you Hope to see you back bye !!------")
+                    print("Am so glad i served you Hope to see you back bye !!------")
                     break
-                
-                else :
-                    print ("invalid input !!!!!!!!! you MotherFucker!!!!!!!")
+
+                else:
+                    print("invalid input !!!!!!!!! you MotherFucker!!!!!!!")
 
         elif option == 3:
-            print ("Thank you for passing by see you soon bye ==========!!!!!!")
+            print("Thank you for passing by see you soon bye ==========!!!!!!")
             break
 
-        else :
-            print (" !!!! Invalid choice !!!!! What is wrong with you motherFucker")
+        else:
+            print(" !!!! Invalid choice !!!!! What is wrong with you motherFucker")
+
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
